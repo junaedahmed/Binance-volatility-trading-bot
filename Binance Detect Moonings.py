@@ -508,7 +508,9 @@ if __name__ == '__main__':
         DEBUG = True
 
     # Load creds for correct environment
-    access_key, secret_key = load_correct_creds(parsed_creds)
+    # access_key, secret_key = load_correct_creds(parsed_creds)
+    access_key = os.getenv('API_KEY')
+    secret_key = os.getenv('API_SECRET')
 
     if DEBUG:
         print(f'loaded config below\n{json.dumps(parsed_config, indent=4)}')
