@@ -2,7 +2,7 @@
 script_options:
   # Switch between testnet and mainnet
   # Setting this to False will use REAL funds, use at your own risk
-  TEST_MODE: True
+  TEST_MODE: False
   LOG_TRADES: True
   LOG_FILE: 'trades.txt'
 
@@ -33,7 +33,7 @@ trading_options:
     - UP
 
   # Maximum number of trade 'slots' at any time (your USDT balance must be at least MAX_COINS * QUANTITY)
-  MAX_COINS: 7
+  MAX_COINS: 5
 
   # the amount of time in MINUTES to calculate the difference from the current price (minimum: 1).
   TIME_DIFFERENCE: 1
@@ -49,7 +49,7 @@ trading_options:
   STOP_LOSS: 5
 
   # define in % when to take profit on a profitable coin.
-  TAKE_PROFIT: 1
+  TAKE_PROFIT: .8
 
   # Use custom tickers.txt list for filtering pairs.
   CUSTOM_LIST: True
